@@ -84,7 +84,7 @@ from oscar import get_core_apps
 
 # Setting to turn on featured images for blog posts. Defaults to False.
 #
-# BLOG_USE_FEATURED_IMAGE = True
+BLOG_USE_FEATURED_IMAGE = True
 
 # If True, the django-modeltranslation will be added to the
 # INSTALLED_APPS setting.
@@ -284,7 +284,7 @@ INSTALLED_APPS = [
 
     'django.contrib.messages',
     'django.contrib.flatpages',
-    'compressor',
+    # 'compressor',
     'widget_tweaks',
 ] + get_core_apps(['apps.catalogue',
                    'apps.checkout',
