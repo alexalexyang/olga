@@ -216,7 +216,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(PROJECT_ROOT, "templates"),
+            # os.path.join(PROJECT_ROOT, "templates"),
 
             os.path.join(
                 os.path.join(PROJECT_ROOT, "shop"),
@@ -261,6 +261,7 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = [
+    "theme",
     "shop",
     "django.contrib.admin",
     "django.contrib.auth",

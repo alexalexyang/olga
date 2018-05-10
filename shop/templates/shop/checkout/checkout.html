@@ -1,4 +1,4 @@
-{% extends "checkout/layout.html" %}
+{% extends "base.html" %}
 {% load currency_filters %}
 {% load thumbnail %}
 {% load i18n %}
@@ -6,14 +6,14 @@
 {% load staticfiles %}
 
 {% block title %}
-    {% trans "Checkout" %} | {{ block.super }}
+    {% trans "Checkout" %} <!-- | {{ block.super }} -->
 {% endblock %}
 
 {% block checkout_nav %}
     {% include 'checkout/nav.html' %}
 {% endblock %}
 
-{% block content %}
+{% block main %}
 
     {% if error %}
         <div class="alert alert-danger">
@@ -165,4 +165,4 @@
     {% block place_order %}
     {% endblock place_order %}
 
-{% endblock content %}
+{% endblock main %}

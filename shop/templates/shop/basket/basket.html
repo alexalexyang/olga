@@ -1,9 +1,9 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 {% load thumbnail %}
 {% load i18n %}
 
 {% block title %}
-    {% trans "Basket" %} | {{ block.super }}
+    {% trans "Basket" %} <!-- | {{ block.super }} -->
 {% endblock %}
 
 {% block breadcrumbs %}
@@ -22,10 +22,10 @@
     {% trans "Basket" %}
 {% endblock %}
 
-{% block content %}
+{% block main %}
     {# Use a partial template so that AJAX can be used to re-render basket #}
     {% include 'basket/partials/basket_content.html' %}
-{% endblock content %}
+{% endblock main %}
 
 {% block onbodyload %}
     {{ block.super }}

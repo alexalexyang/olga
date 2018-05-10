@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
 {% load history_tags %}
 {% load currency_filters %}
@@ -45,7 +45,7 @@
 {% block header %}
 {% endblock header %}
 
-{% block content %}
+{% block main %}
 
 <article class="product_page"><!-- Start of product page -->
 
@@ -194,7 +194,7 @@
     {% recently_viewed_products current_product=product %}
 
 </article><!-- End of product page -->
-{% endblock content %}
+{% endblock main %}
 
 {% block extrascripts %}
     {{ block.super }}

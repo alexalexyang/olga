@@ -10,6 +10,8 @@ from django.conf import settings
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
+from . import views
+
 from oscar.app import application
 
 admin.autodiscover()
@@ -40,9 +42,10 @@ urlpatterns += [
     # one homepage pattern, so if you use a different one, comment this
     # one out.
 
-    url("not_home", direct_to_template, {"template": "index.html"}, name="home"),
-    url("", include(application.urls)),
-    url(r"^blog/$", RedirectView.as_view(url="/mez/blog/", permanent=False), name='go-to-mezblog'),
+    # url("not_home", direct_to_template, {"template": "index.html"}, name="home"),
+    url("^$", views.blog_post_list_index, name="home"),
+    url("shop/", include(application.urls)),
+    # url(r"^blog/$", RedirectView.as_view(url="/mez/blog/", permanent=False), name='go-to-mezblog'),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
@@ -82,7 +85,7 @@ urlpatterns += [
     # ``mezzanine.urls``, go right ahead and take the parts you want
     # from it, and use them directly below instead of using
     # ``mezzanine.urls``.
-    url("^mez/", include("mezzanine.urls")),
+    url("^", include("mezzanine.urls")),
 
     # MOUNTING MEZZANINE UNDER A PREFIX
     # ---------------------------------
