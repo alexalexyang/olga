@@ -7,13 +7,13 @@ class ProductForm(baseProductForm):
     class Meta(baseProductForm.Meta):
         fields = [
             'title',
-            'title_de',
+            # 'title_de',
             'title_ru',
-            'title_zh_hans',
+            # 'title_zh_hans',
             'upc',
             'description',
-            'description_de',
+            # 'description_de',
             'description_ru',
-            'description_zh_hans',
+            # 'description_zh_hans',
             'is_discountable',
             'structure']

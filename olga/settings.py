@@ -119,9 +119,9 @@ LANGUAGE_CODE = "en"
 # Supported languages
 LANGUAGES = (
     ('en', _('English')),
-    ('de', _('German')),
+    # ('de', _('German')),
     ('ru', _('Russian')),
-    ('zh-hans', _('Simplified Chinese')),
+    # ('zh-hans', _('Simplified Chinese')),
 )
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
@@ -217,14 +217,14 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            # os.path.join(PROJECT_ROOT, "templates"),
+            os.path.join(PROJECT_ROOT, "templates"),
 
             os.path.join(
                 os.path.join(PROJECT_ROOT, "shop"),
                 os.path.join("templates", "shop")
             ),
 
-            OSCAR_MAIN_TEMPLATE_DIR
+            OSCAR_MAIN_TEMPLATE_DIR,
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -262,8 +262,8 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = [
-    "theme",
     "shop",
+    "provodnik",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -404,9 +404,5 @@ OSCAR_ALLOW_ANON_CHECKOUT = True
 OSCAR_FROM_EMAIL = "alexalexyang@gmail.com"
 
 OSCAR_DEFAULT_CURRENCY = 'USD'
-
-#
-# OSCAR_SHOP_NAME = 'Olga\'s Soviet Space Tours'
-# OSCAR_SHOP_TAGLINE = 'For a wholesome Muscovite experience'
 
 # OSCAR_GOOGLE_ANALYTICS_ID = ""
