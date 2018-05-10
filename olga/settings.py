@@ -121,6 +121,7 @@ LANGUAGES = (
     ('en', _('English')),
     ('de', _('German')),
     ('ru', _('Russian')),
+    ('zh-hans', _('Simplified Chinese')),
 )
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces

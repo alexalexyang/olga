@@ -9,9 +9,11 @@ class ProductForm(baseProductForm):
             'title',
             'title_de',
             'title_ru',
+            'title_zh_hans',
             'upc',
             'description',
             'description_de',
             'description_ru',
+            'description_zh_hans',
             'is_discountable',
             'structure']
