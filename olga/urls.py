@@ -43,8 +43,7 @@ urlpatterns += [
     # one out.
 
     # url("not_home", direct_to_template, {"template": "index.html"}, name="home"),
-    url("^$", direct_to_template, {"template": "excite.html"}, name="excite"),
-    url("cms", views.blog_post_list_index, name="home"),
+    url("^$", views.blog_post_list_index, name="home"),
     url("shop/", include(application.urls)),
     # url(r"^blog/$", RedirectView.as_view(url="/mez/blog/", permanent=False), name='go-to-mezblog'),
 
