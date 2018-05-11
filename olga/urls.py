@@ -9,6 +9,7 @@ from django.conf import settings
 
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
+from mezzanine import pages
 
 from . import views
 
@@ -43,7 +44,7 @@ urlpatterns += [
     # one out.
 
     # url("not_home", direct_to_template, {"template": "index.html"}, name="home"),
-    url("^$", views.blog_post_list_index, name="home"),
+    # url("^$", views.blog_post_list_index, name="home"),
     url("shop/", include(application.urls)),
     # url(r"^blog/$", RedirectView.as_view(url="/mez/blog/", permanent=False), name='go-to-mezblog'),
 
@@ -61,7 +62,7 @@ urlpatterns += [
     # should be used if you want to customize the homepage's template.
     # NOTE: Don't forget to import the view function too!
 
-    # url("^$", mezzanine.pages.views.page, {"slug": "/"}, name="home"),
+    url("^$", pages.views.page, {"slug": "/"}, name="home"),
 
     # HOMEPAGE FOR A BLOG-ONLY SITE
     # -----------------------------

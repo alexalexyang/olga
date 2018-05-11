@@ -1,4 +1,4 @@
-{% extends "blog/blog_post_list.html" %}
+{% extends "layout.html" %}
 {% load mezzanine_tags comment_tags keyword_tags rating_tags i18n disqus_tags %}
 
 {% block meta_title %}{{ blog_post.meta_title }}{% endblock %}
@@ -13,18 +13,17 @@
 {% endmetablock %}{% endblock %}
 
 {% block title %}
-{% editable blog_post.title %}{{ blog_post.title }}{% endeditable %}
+{{ blog_post.title }}
 {% endblock %}
 
+{% block content %}
 {% block breadcrumb_menu %}
 {{ block.super }}
 <li class="active">{{ blog_post.title }}</li>
 {% endblock %}
 
 {% block main %}
-<h2>
-    {{ blog_post.title }}
-</h2>
+
 {% block blog_post_detail_postedby %}
 {% editable blog_post.publish_date %}
 <h6 class="post-meta">
@@ -36,7 +35,7 @@
 </h6>
 {% endeditable %}
 {% endblock %}
-<!-- {% block blog_post_detail_commentlink %}
+{% block blog_post_detail_commentlink %}
 <p>
     {% if blog_post.allow_comments %}
         {% if settings.COMMENTS_DISQUS_SHORTNAME %}
@@ -50,7 +49,7 @@
         {% endif %}
     {% endif %}
 </p>
-{% endblock %} -->
+{% endblock %}
 
 {% block blog_post_detail_featured_image %}
 {% if settings.BLOG_USE_FEATURED_IMAGE and blog_post.featured_image %}
@@ -82,19 +81,19 @@
 {% endif %}
 {% endblock %}
 
-<!-- {% block blog_post_detail_rating %}
+{% block blog_post_detail_rating %}
 <div class="panel panel-default rating">
     <div class="panel-body">
     {% rating_for blog_post %}
     </div>
 </div>
-{% endblock %} -->
+{% endblock %}
 
-<!-- {% block blog_post_detail_sharebuttons %}
+{% block blog_post_detail_sharebuttons %}
 {% set_short_url_for blog_post %}
 <a class="btn btn-sm share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{ blog_post.short_url|urlencode }}&amp;text={{ blog_post.title|urlencode }}">{% trans "Share on Twitter" %}</a>
 <a class="btn btn-sm share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}">{% trans "Share on Facebook" %}</a>
-{% endblock %} -->
+{% endblock %}
 
 {% block blog_post_previous_next %}
 <ul class="pager">
@@ -130,6 +129,8 @@
 
 {% block blog_post_detail_comments %}
 {% if blog_post.allow_comments %}{% comments_for blog_post %}{% endif %}
+{% endblock %}
+
 {% endblock %}
 
 {% endblock %}
