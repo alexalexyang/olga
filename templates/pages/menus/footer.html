@@ -1,4 +1,23 @@
-{% load i18n pages_tags %}
+<ul class="list-inline list-social img-circle">
+    {% if settings.SOCIAL_LINK_FACEBOOK %}
+        <li><a target="_blank" href="{{ settings.SOCIAL_LINK_FACEBOOK }}"><i class="fab fa-facebook-f"></i></a>
+    {% endif %}
+
+    {% if settings.SOCIAL_LINK_TWITTER %}
+        <li><a target="_blank" href="{{ settings.SOCIAL_LINK_TWITTER }}"><i class="fab fa-twitter"></i></a>
+    {% endif %}
+
+    {% if settings.SOCIAL_LINK_INSTAGRAM %}
+        <li><a target="_blank" href="{{ settings.SOCIAL_LINK_INSTAGRAM }}"><i class="fab fa-instagram"></i></a>
+    {% endif %}
+
+    {% if settings.SOCIAL_LINK_NEWSLETTER %}
+        <li><a target="_blank" href="{{ settings.SOCIAL_LINK_NEWSLETTER }}"><i class="far fa-envelope"></i></a>
+    {% endif %}
+</ul>
+
+
+<!-- {% load i18n pages_tags %}
 
 {% spaceless %}
 {% if page_branch_in_menu %}
@@ -42,4 +61,4 @@
 {% endfor %}
 
 {% endif %}
-{% endspaceless %}
+{% endspaceless %} -->

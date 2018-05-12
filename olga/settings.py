@@ -404,4 +404,6 @@ OSCAR_FROM_EMAIL = "alexalexyang@gmail.com"
 
 OSCAR_DEFAULT_CURRENCY = 'USD'
 
+SITE_TITLE = "provodnik"
+
 # OSCAR_GOOGLE_ANALYTICS_ID = ""
