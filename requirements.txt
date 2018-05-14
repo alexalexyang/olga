@@ -6,3 +6,5 @@ Mezzanine==4.2.3
 Django-oscar==1.5.2
 psycopg2==2.7.3.2
 gunicorn
+brotli-1.0.4
+whitenoise-3.3.1

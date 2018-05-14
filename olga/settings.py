@@ -309,6 +309,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     "mezzanine.core.request.CurrentRequestMiddleware",
     "mezzanine.core.middleware.RedirectFallbackMiddleware",
     "mezzanine.core.middleware.TemplateForDeviceMiddleware",
@@ -407,3 +410,12 @@ OSCAR_DEFAULT_CURRENCY = 'USD'
 SITE_TITLE = "provodnik"
 
 # OSCAR_GOOGLE_ANALYTICS_ID = ""
+
+
+
+
+##############
+# WHITENOISE #
+##############
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
