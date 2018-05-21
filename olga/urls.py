@@ -46,11 +46,11 @@ urlpatterns += [
     # url("not_home", direct_to_template, {"template": "index.html"}, name="home"),
 
     # Pages specific to Provodnik
-    url("tours", direct_to_template, {"template": "provodnik/tours/tours.html"}, name="tours"),
-    url("tours/moscow-detour", direct_to_template, {"template": "provodnik/tours/moscow-detour.html"}, name="tours-moscow-detour"),
-    url("tours/art-tour", direct_to_template, {"template": "provodnik/tours/art-tour.html"}, name="tours-art-tour"),
-    url("tours/new-russian-cuisine", direct_to_template, {"template": "provodnik/tours/new-russian-cuisine.html"}, name="tours-new-russian-cuisine"),
-    url("special-tours", direct_to_template, {"template": "provodnik/walks.html"}, name="walks"),
+    url("tours/", direct_to_template, {"template": "provodnik/tours/tours.html"}, name="tours"),
+    url("tours/moscow-detour/", direct_to_template, {"template": "provodnik/tours/moscow-detour.html"}, name="tours-moscow-detour"),
+    url("tours/art-tour/", direct_to_template, {"template": "provodnik/tours/art-tour.html"}, name="tours-art-tour"),
+    url("tours/new-russian-cuisine/", direct_to_template, {"template": "provodnik/tours/new-russian-cuisine.html"}, name="tours-new-russian-cuisine"),
+    url("special-tours/", direct_to_template, {"template": "provodnik/walks.html"}, name="walks"),
 
     # url("^$", views.blog_post_list_index, name="home"),
     url("shop/", include(application.urls)),
