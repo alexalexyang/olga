@@ -156,12 +156,13 @@
 </div>
 
 <div class="col-md-7 middle">
+    {% include "includes/language_selector.html" %}
     {% block main %}{% endblock %}
 </div>
 
 <div class="col-md-3 right">
     {% nevercache %}
-    {% include "includes/language_selector.html" %}
+    <!-- {% include "includes/language_selector.html" %} -->
     <!-- {% include "includes/user_panel.html" %} -->
     {% endnevercache %}
     <!-- <div class="panel panel-default">
