@@ -1,10 +1,10 @@
 django_modeltranslation==0.12.2
 Fabric3==1.13.1.post1
-Django==1.11.12
+Django==1.10.8
 future==0.16.0
 Mezzanine==4.2.3
 Django-oscar==1.5.2
 psycopg2==2.7.3.2
 gunicorn
-brotli-1.0.4
-whitenoise-3.3.1
+brotli==1.0.4
+whitenoise==3.3.1
