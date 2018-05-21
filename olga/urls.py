@@ -44,14 +44,6 @@ urlpatterns += [
     # one out.
 
     # url("not_home", direct_to_template, {"template": "index.html"}, name="home"),
-
-    # Pages specific to Provodnik
-    # url("tours/moscow-detour", direct_to_template, {"template": "provodnik/tours/moscow_detour.html"}, name="tours-moscow-detour"),
-    # url("tours/art-tour", direct_to_template, {"template": "provodnik/tours/art_tour_en.html"}, name="tours-art-tour_en"),
-    # url("ru/tours/art-tour", direct_to_template, {"template": "provodnik/tours/art_tour_ru.html"}, name="tours-art-tour_ru"),
-    # url("tours/new-russian-cuisine", direct_to_template, {"template": "provodnik/tours/new_russian_cuisine.html"}, name="tours-new-russian-cuisine"),
-    # url("special-tours", direct_to_template, {"template": "provodnik/walks.html"}, name="walks"),
-    # url("tours", direct_to_template, {"template": "provodnik/tours/tours.html"}, name="tours"),
     # url("^$", views.blog_post_list_index, name="home"),
     url("shop/", include(application.urls)),
     # url(r"^blog/$", RedirectView.as_view(url="/mez/blog/", permanent=False), name='go-to-mezblog'),
