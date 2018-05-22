@@ -113,7 +113,12 @@
 </div>
 <div class="navbar-collapse collapse navbar-right"> <!-- navbar-right from clemo -->
     <!-- {% block navbar_search_form %}{% search_form "all" %}{% endblock %} -->
+    <div class="navbar-menu">
     {% block navbar_dropdown_menu %}{% page_menu "pages/menus/dropdown.html" %}{% endblock%}
+    </div>
+    <div class="navbar-language-selector">
+    {% nevercache %}{% include "includes/language_selector.html" %}{% endnevercache %}
+    </div>
 </div>
 </div>
 </div>
@@ -157,13 +162,11 @@
 
 <!-- <div class="col-md-7 middle"> -->
 <div class="col-md-12 middle">
-    {% include "includes/language_selector.html" %}
     {% block main %}{% endblock %}
 </div>
 
 <!-- <div class="col-md-3 right">
     {% nevercache %}
-    {% include "includes/language_selector.html" %}
     {% include "includes/user_panel.html" %}
     {% endnevercache %}
     <div class="panel panel-default">
