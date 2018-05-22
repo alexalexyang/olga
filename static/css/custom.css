@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "circe_bold";
+  src: url("/static/fonts/CirceBold/Circe-Bold.woff") format("woff"),
+       url("/static/fonts/CirceBold/Circe-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "circe_light";
+  src: url("/static/fonts/CirceLight/Circe-Light.woff") format("woff"),
+  url("/static/fonts/CirceLight/Circe-Light.ttf") format("truetype");
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    color: blue;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: blue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'circe_bold', montserratlight,sans-serif;
+}
+
+body {
+    font-family: 'circe_light', montserratlight,sans-serif;
+    font-size: 14px;
+    background-color: #F7F7F7;
+}
+
+.navbar-default .navbar-brand {
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, blue, pink); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, blue, pink); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, blue, pink); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, blue, pink); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: #F7F7F7;
+}
+
+.form-group {
+    margin: 0px;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+    padding: 4px;
+}
+
+.btn {
+    min-width: 0px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.navbar-menu {
+    float: left;
+}
+
+.navbar-language-selector {
+    float: right;
+}
+
+footer {
+    background-color: #4D4D4D;
+    color: #fff;
+}
+
+
+.list-social i {
+    color: #fff;
+    background: #aaa79e;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
