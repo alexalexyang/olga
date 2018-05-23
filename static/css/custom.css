@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    background: #F7F7F7;
+    background: #fff;
 }
 
 .form-group {
@@ -79,4 +79,23 @@ footer {
     line-height: 40px;
     margin-left: 10px;
     border-radius: 100%;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 350px;
+    min-width: 310px;
+    max-width: 510px;
+
+}
+.row {
+    display: table;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
 }
