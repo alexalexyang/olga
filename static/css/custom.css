@@ -82,7 +82,7 @@ footer {
 }
 
 
-.column {
+.frontpage_column {
     float: left;
     width: 50%;
     padding: 15px;
@@ -93,7 +93,8 @@ footer {
     max-width: 510px;
 
 }
-.row {
+
+.frontpage_row {
     display: table;
     clear: both;
     margin-left: auto;
