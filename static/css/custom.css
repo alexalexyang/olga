@@ -154,3 +154,16 @@ footer {
     text-decoration: none;
     border: 1px solid #4D4D4D;
 }
+
+.list-social i {
+    margin-top: 20px;
+}
+
+h5 {
+    margin-top: 0rem;
+    color: #424242;
+}
+
+strong {
+    FONT-SIZE: 16px;
+}
