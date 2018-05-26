@@ -20,6 +20,8 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'circe_bold', montserratlight,sans-serif;
+    margin-top: 0rem;
+    color: #424242;
 }
 
 body {
@@ -65,10 +67,9 @@ body {
 }
 
 footer {
-    background-color: #4D4D4D;
-    color: #fff;
+    background-color: #F7F7F7;
+    margin-top: 30px;
 }
-
 
 .list-social i {
     color: #fff;
@@ -81,6 +82,19 @@ footer {
     border-radius: 100%;
 }
 
+.col-md-12 {
+    margin-top: 70px;
+}
+
+.frontpage_row {
+    display: block;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
 
 .frontpage_column {
     float: left;
@@ -91,14 +105,33 @@ footer {
     min-height: 350px;
     min-width: 310px;
     max-width: 510px;
-
 }
 
-.frontpage_row {
-    display: table;
+.tours_row {
+    display: block;
     clear: both;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.tours_column {
+    float: left;
+    width: 50%;
+    padding: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 350px;
+    max-width: 500px;
+}
+
+
+.tours-entry .image-container {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 100px;
 }
 
 
@@ -124,15 +157,17 @@ footer {
     display: inline-block;
     padding: .4em;
     text-align: center;
-    color: #fff;
+    color: #656565;
     letter-spacing: 1px;
     margin: 0;
-    font-size: 1rem;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 200px;
     font-weight: 400;
     border-radius: 50px;
-    background-color: #4D4D4D;
+    background-color: #cccccc52;
+    border: 2px solid #ccc;
     transition: .5s;
-    min-width: 0px;
     height: auto;
     margin-top: 10px;
     white-space: nowrap;
@@ -141,29 +176,64 @@ footer {
     touch-action: manipulation;
     cursor: pointer;
     user-select: none;
+
 }
 
 .btn-primary {
-        background-image: none;
+    background-image: none;
     background-repeat: repeat-x;
+    text-shadow: 0 0px 0 rgba(0,0,0,.2);
+    box-shadow: inset 0 0px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
 }
 
 .btn:hover {
     background-color: #4D4D4D;
     color: #000;
     text-decoration: none;
-    border: 1px solid #4D4D4D;
+    border: 2px solid #4D4D4D;
 }
 
 .list-social i {
     margin-top: 20px;
 }
 
+
 h5 {
-    margin-top: 0rem;
-    color: #424242;
+  font-size: 26px;
 }
 
-strong {
+em{
     FONT-SIZE: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#mc_embed_signup input.email{
+  font-family: 'circe_bold', montserratlight, sans-serif;
+	font-size: 14px;
+}
+
+
+#mc_embed_signup label {
+  font-size: 14px;
+	font-weight: inherit;
+}
+
+#mc_embed_signup .button {
+    font-size: 14px;
+    background-color: #cccccc52;
+    border: 2px solid #ccc;
+    color: #656565;
+}
+
+.list-inline>li {
+  padding-right: 15px;
+	padding-left: 15px;
+  margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 50px;
+    color: #656565;
 }
