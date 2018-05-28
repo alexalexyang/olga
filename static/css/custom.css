@@ -66,6 +66,10 @@ body {
     float: right;
 }
 
+.navbar-default {
+    background-image: linear-gradient(to bottom,#fff 0,#ffffff 100%);
+}
+
 footer {
     background-color: #F7F7F7;
     margin-top: 30px;
@@ -82,7 +86,7 @@ footer {
 }
 
 .col-md-12 {
-    margin-top: 70px;
+    margin-top: 170px;
 }
 
 .frontpage_row {
@@ -208,14 +212,15 @@ em{
 }
 
 #mc_embed_signup input.email{
-    font-family: 'circe_bold', montserratlight, sans-serif;
-	font-size: 14px;
+    font-family: 'circe_light', montserratlight, sans-serif;
+	  font-size: 14px;
+    color: #4D4D4D;
 }
 
 
 #mc_embed_signup label {
     font-size: 14px;
-	font-weight: inherit;
+	  font-weight: inherit;
 }
 
 #mc_embed_signup .button {
