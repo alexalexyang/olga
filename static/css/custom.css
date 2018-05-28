@@ -241,3 +241,7 @@ em{
     margin-top: 50px;
     color: #656565;
 }
+
+.form-control:focus {
+    border-color: blue;
+}
