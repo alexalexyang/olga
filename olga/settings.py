@@ -291,6 +291,7 @@ INSTALLED_APPS = [
                    'apps.checkout',
                    'apps.dashboard',
                    'apps.dashboard.catalogue',
+                   'apps.dashboard.communications',
                     ])
 
 # List of middleware classes to use. Order is important; in the request phase,
@@ -399,11 +400,11 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 OSCAR_ALLOW_ANON_CHECKOUT = True
 
-OSCAR_FROM_EMAIL = "alexalexyang@gmail.com"
+OSCAR_FROM_EMAIL = "contact@provodniktours.ru"
 
 OSCAR_DEFAULT_CURRENCY = 'USD'
 
