@@ -226,6 +226,10 @@ em{
     color: #656565;
 }
 
+#mc_embed_signup .button:hover {
+    border: 2px solid #656565;
+}
+
 .list-inline>li {
   padding-right: 15px;
 	padding-left: 15px;

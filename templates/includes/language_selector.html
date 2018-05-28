@@ -29,9 +29,9 @@
 <form action="{% url "set_language" %}" method="post" id="language_selector_form">
   {% csrf_token %}
   <div class="form-group">
-      <div class="btn-group btn-group-sm" role="group" aria-label="...">
+      <div class="provodnik_language_button_group btn-group btn-group-sm" role="group" aria-label="...">
       {% for language in languages %}
-        <button name="language" type="submit" class="btn btn-secondary" value="{{ language.code }}" onclick="myFunction()">{{ language.name_local }}</button>
+        <button name="language" type="submit" class="provodnik_language_button btn btn-secondary" value="{{ language.code }}" onclick="myFunction()">{{ language.code }}</button>
       {% endfor %}
       </div>
   </div>
