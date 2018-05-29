@@ -24,10 +24,33 @@ h1, h2, h3, h4, h5, h6 {
     color: #424242;
 }
 
+h5 {
+  font-size: 26px;
+}
+
+em{
+    FONT-SIZE: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+a {
+    color: #424242;
+}
+
+a:hover, a:focus {
+    color: blue;
+ }
+
 body {
     font-family: 'circe_light', montserratlight,sans-serif;
     font-size: 14px;
     background-color: #F7F7F7;
+}
+
+.col-md-12 {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .navbar-default .navbar-brand {
@@ -100,9 +123,7 @@ footer {
     border-radius: 100%;
 }
 
-.col-md-12 {
-    margin-top: 170px;
-}
+
 
 .frontpage_row {
     display: block;
@@ -137,12 +158,12 @@ footer {
 .tours_column {
     float: left;
     width: 50%;
-    padding: 35px;
+    padding: 65px;
     margin-left: auto;
     margin-right: auto;
     min-width: 350px;
-    max-width: 500px;
 }
+
 
 
 .tours-entry .image-container {
@@ -164,7 +185,7 @@ footer {
     color: #656565;
     background-color: #F7F7F7;
     background-image: none;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 30px;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
@@ -211,19 +232,14 @@ footer {
     border: 2px solid #4D4D4D;
 }
 
+.btn-group>.btn, .btn-group-vertical>.btn {
+  position: relative;
+	float: left;
+	width: 45px;
+}
+
 .list-social i {
     margin-top: 20px;
-}
-
-
-h5 {
-  font-size: 26px;
-}
-
-em{
-    FONT-SIZE: 16px;
-    font-weight: bold;
-    font-style: normal;
 }
 
 #mc_embed_signup input.email{
@@ -263,4 +279,11 @@ em{
 
 .form-control:focus {
     border-color: blue;
+}
+
+.form-control .option {
+    outline: #ccc 5px;
+    outline-color: #ccc;
+    outline-style: auto;
+    outline-width: 5px;
 }
