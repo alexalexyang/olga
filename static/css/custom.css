@@ -138,12 +138,10 @@ footer {
 .frontpage_column {
     float: left;
     width: 50%;
-    padding: 15px;
+    padding: 35px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 350px;
     min-width: 310px;
-    max-width: 510px;
 }
 
 .tours_row {
