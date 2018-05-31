@@ -18,6 +18,7 @@
     color: blue;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'circe_bold', montserratlight,sans-serif;
     margin-top: 0rem;
@@ -141,7 +142,7 @@ footer {
     padding: 35px;
     margin-left: auto;
     margin-right: auto;
-    min-width: 310px;
+    min-width: 350px;
 }
 
 .tours_row {
@@ -284,4 +285,55 @@ footer {
     outline-color: #ccc;
     outline-style: auto;
     outline-width: 5px;
+}
+
+.tour_description {
+  float: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 35px;
+  min-width: 450px;
+}
+
+.tour_description_half1 {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-right: 5px;
+}
+
+.tour_description_half2 {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-left: 5px;
+}
+
+.tour_info {
+  float: left;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 35px;
+  min-width: 120px;
+
+}
+
+.about_image {
+  float: left;
+  width: 33.3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-right: 5px;
+}
+
+.about_image_all{
+  padding: 35px;
+  padding-right: 15px;
 }
