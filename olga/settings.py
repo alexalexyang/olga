@@ -401,10 +401,9 @@ HAYSTACK_CONNECTIONS = {
 }
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# OSCAR_FROM_EMAIL = "contact@provodniktours.ru"
 
 OSCAR_ALLOW_ANON_CHECKOUT = True
-
-OSCAR_FROM_EMAIL = "contact@provodniktours.ru"
 
 OSCAR_DEFAULT_CURRENCY = 'USD'
 
