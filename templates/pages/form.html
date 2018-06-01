@@ -24,6 +24,7 @@
 
     <form class="mezzanine-form" method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
         {% fields_for form %}
+        {% csrf_token %}
         <div class="form-actions">
             <input class="btn btn-primary btn-lg" type="submit"
                 value="{% if page.form.button_text %}{{ page.form.button_text }}{% else %}{% trans "Submit" %}{% endif %}">
