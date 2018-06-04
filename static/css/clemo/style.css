@@ -107,7 +107,11 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-    outline: none;
+  outline: none;
+  background-color: #eaeaea;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
 }
 .form-control {
     border: 1px solid rgba(0, 0, 0, 0.08);
