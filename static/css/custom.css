@@ -293,8 +293,18 @@ label {
     display: inline-block;
     max-width: 100%;
     min-width: 70px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-weight: 500;
+    margin-left: 50px;
+}
+
+.form-actions {
+  margin-left: 200px;
+}
+
+.contact_us{
+  margin-left: 50px;
+
 }
 
 
