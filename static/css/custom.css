@@ -359,6 +359,16 @@ label {
   padding-right: 15px;
 }
 
+.blog_column {
+  float: left;
+	width: 50%;
+	padding: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 350px;
+}
+
+
 .thumbnail {
     background-color: transparent;
     border: transparent;
