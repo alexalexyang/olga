@@ -76,12 +76,6 @@ body {
     padding: 4px;
 }
 
-.btn {
-    min-width: 0px;
-    height: auto;
-    margin-top: 10px;
-}
-
 .navbar-menu {
     float: left;
 }
@@ -161,8 +155,8 @@ footer {
     background-color: #cccccc52;
     border: 2px solid #ccc;
     transition: .5s;
-    height: auto;
-    margin-top: 10px;
+    /* height: auto; */
+    /* margin-top: 10px; */
     white-space: nowrap;
     vertical-align: middle;
     -ms-touch-action: manipulation;
