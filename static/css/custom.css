@@ -72,10 +72,6 @@ body {
     margin: 0px;
 }
 
-.btn-sm, .btn-group-sm>.btn {
-    padding: 4px;
-}
-
 .navbar-menu {
     float: left;
 }
@@ -118,10 +114,6 @@ footer {
     border-radius: 100%;
 }
 
-
-
-
-
 .form-control {
     display: inline-block;
     width: 60%;
@@ -138,9 +130,10 @@ footer {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+/* language buttons section start */
 
-
-.btn {
+.provodnik_language_button {
+    min-width: 0px;
     display: inline-block;
     padding: .4em;
     text-align: center;
@@ -155,8 +148,8 @@ footer {
     background-color: #cccccc52;
     border: 2px solid #ccc;
     transition: .5s;
-    /* height: auto; */
-    /* margin-top: 10px; */
+    height: auto;
+    margin-top: 10px;
     white-space: nowrap;
     vertical-align: middle;
     -ms-touch-action: manipulation;
@@ -165,6 +158,25 @@ footer {
     user-select: none;
 
 }
+
+.provodnik_language_button_group>.btn {
+  position: relative;
+	float: left;
+	width: 45px;
+}
+
+/* language buttons section end */
+
+/* section below overrides bootstrap and clemo style.css to give the update button the right size */
+
+.provodnik_quantity_update_button {
+    margin-top: 0px;
+    height: 35px;
+    min-width: 130px;
+    padding: 0px;
+}
+
+/* section end */
 
 .btn-primary {
     background-image: none;
@@ -178,12 +190,6 @@ footer {
     color: #000;
     text-decoration: none;
     border: 2px solid #4D4D4D;
-}
-
-.btn-group>.btn, .btn-group-vertical>.btn {
-  position: relative;
-	float: left;
-	width: 45px;
 }
 
 .list-social i {
