@@ -10,6 +10,12 @@
   url("/static/fonts/CirceLight/Circe-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "circe_extrabold";
+  src: url("/static/fonts/CirceExtraBold/Circe-ExtraBold.woff") format("woff"),
+  url("/static/fonts/CirceExtraBold/Circe-ExtraBold.ttf") format("truetype");
+}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
     color: blue;
 }
@@ -18,11 +24,11 @@
     color: blue;
 }
 
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'circe_extrabold', montserratlight,sans-serif;
+  margin-top: 0rem;
+  color: #424242;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'circe_bold', montserratlight,sans-serif;
-    margin-top: 0rem;
-    color: #424242;
 }
 
 h5 {
@@ -368,6 +374,21 @@ label {
 	min-width: 350px;
 }
 
+.walks_column {
+  float: left;
+	width: 50%;
+	padding: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 350px;
+}
+
+.walks_entry {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 100px;
+}
 
 .thumbnail {
     background-color: transparent;
