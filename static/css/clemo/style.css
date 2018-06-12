@@ -356,22 +356,22 @@ Button
     padding: .4em;
     height: 45px;
     text-align: center;
-    color: #fff;
     letter-spacing: 1px;
     margin: 0;
-    font-size: 1.125rem;
     border-radius: 50px;
     margin-top: 20px;
-    background-color: #000;
     transition: .5s;
-    border:1px solid #000;
+    font-size: 14px;
+    background-color: #cccccc52;
+    border: 2px solid #ccc;
+    color: #656565;
 
 }
 .btn:hover {
-    background-color:#ffcb93;
+    background-color: #4D4D4D;
     color: #000;
     text-decoration: none;
-    border:1px solid #ffcb93;
+    border: 2px solid #4D4D4D;
 }
 .btn-default {
     color: #333;
@@ -379,10 +379,12 @@ Button
     border-color: #ccc;
 }
 .btn-default:hover {
-    color: #333;
-    background-color: #fff;
-    border-color:#000;
+  background-color: #4D4D4D;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #4D4D4D;
 }
+
 
 /*
 Extra height css

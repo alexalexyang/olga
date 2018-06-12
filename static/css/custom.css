@@ -39,6 +39,7 @@ em{
     FONT-SIZE: 16px;
     font-weight: bold;
     font-style: normal;
+    color: #424242;
 }
 
 a {
@@ -198,6 +199,9 @@ footer {
     border: 2px solid #4D4D4D;
 }
 
+
+
+
 .list-social i {
     margin-top: 20px;
 }
@@ -222,7 +226,10 @@ footer {
 }
 
 #mc_embed_signup .button:hover {
-    border: 2px solid #656565;
+  background-color: #4D4D4D;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #4D4D4D;
 }
 
 .list-inline>li {
