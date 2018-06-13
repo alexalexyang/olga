@@ -16,28 +16,21 @@
   url("/static/fonts/CirceExtraBold/Circe-ExtraBold.ttf") format("truetype");
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
-    color: blue;
-}
-
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-    color: blue;
-}
 
 h1, h2, h3, h4, h5, h6  {
-  font-family: 'circe_extrabold', montserratlight,sans-serif;
+  font-family: 'circe_extrabold', montserrat,sans-serif;
   margin-top: 0rem;
   color: #424242;
 
 }
 
 h5 {
-  font-size: 26px;
+  font-size: 28px;
 }
 
 em{
-    FONT-SIZE: 16px;
-    font-weight: bold;
+    FONT-SIZE: 18px;
+    font-family: 'circe_extrabold', montserrat,sans-serif;
     font-style: normal;
     color: #424242;
 }
@@ -52,7 +45,7 @@ a:hover, a:focus {
 
 body {
     font-family: 'circe_light', montserratlight,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #F7F7F7;
 }
 
@@ -61,8 +54,21 @@ body {
     margin-bottom: 200px;
 }
 
+.navbar-default .navbar-text {
+    color: #656565;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    color: blue;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: blue;
+}
+
 .navbar-default .navbar-brand {
-    background: blue; /* For browsers that do not support gradients */
+    background: #F7F7F7; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, blue, pink); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, blue, pink); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, blue, pink); /* For Firefox 3.6 to 15 */
@@ -99,6 +105,7 @@ body {
     background-image: linear-gradient(to bottom,white 0,white 100%);
     box-shadow: inset 0 3px 9px rgba(0,0,0,0);
     background-color: white;
+    font-size: 14px;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
@@ -153,7 +160,7 @@ footer {
     font-weight: 400;
     border-radius: 50px;
     background-color: #cccccc52;
-    border: 2px solid #ccc;
+    border: 0px;
     transition: .5s;
     height: auto;
     margin-top: 10px;
@@ -170,7 +177,15 @@ footer {
   position: relative;
 	float: left;
 	width: 45px;
+  border: 0px;
 }
+
+.provodnik_language_button_group>.btn:hover {
+    background-color: #4D4D4D;
+    color: #ccc;
+    text-decoration: none;
+    border: 0px;
+  }
 
 /* language buttons section end */
 
@@ -194,9 +209,9 @@ footer {
 
 .btn:hover {
     background-color: #4D4D4D;
-    color: #000;
+    color: #ccc;
     text-decoration: none;
-    border: 2px solid #4D4D4D;
+    border: 0px;
 }
 
 
@@ -221,15 +236,15 @@ footer {
 #mc_embed_signup .button {
     font-size: 14px;
     background-color: #cccccc52;
-    border: 2px solid #ccc;
+    border: 0px;
     color: #656565;
 }
 
 #mc_embed_signup .button:hover {
   background-color: #4D4D4D;
-  color: #000;
+  color: #ccc;
   text-decoration: none;
-  border: 2px solid #4D4D4D;
+  border: 0px;
 }
 
 .list-inline>li {
@@ -242,6 +257,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     color: #656565;
+    font-size: 14px;
 }
 
 .form-control:focus {

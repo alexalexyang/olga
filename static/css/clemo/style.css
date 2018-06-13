@@ -363,26 +363,26 @@ Button
     transition: .5s;
     font-size: 14px;
     background-color: #cccccc52;
-    border: 2px solid #ccc;
+    border: 0px solid #ccc;
     color: #656565;
 
 }
 .btn:hover {
-    background-color: #4D4D4D;
-    color: #000;
-    text-decoration: none;
-    border: 2px solid #4D4D4D;
+  background-color: #4D4D4D;
+  color: #ccc;
+  text-decoration: none;
+  border: 0px;
 }
 .btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
+    color: #656565;
+    background-color: #cccccc52;
+    border: 0px;
 }
 .btn-default:hover {
   background-color: #4D4D4D;
-  color: #000;
+  color: #ccc;
   text-decoration: none;
-  border: 2px solid #4D4D4D;
+  border: 0px;
 }
 
 
