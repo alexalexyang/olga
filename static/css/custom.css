@@ -43,6 +43,12 @@ a:hover, a:focus {
     color: blue;
  }
 
+ strong {
+   font-family: 'circe_bold';
+
+ }
+ 
+
 body {
     font-family: 'circe_light', montserratlight,sans-serif;
     font-size: 16px;
@@ -417,12 +423,4 @@ label {
     background-color: transparent;
     border: transparent;
     box-shadow: 0 1px 2px rgba(0,0,0,0);
-}
-
-.editable-original {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-left: auto;
-	margin-right: auto;
-	min-width: 350px;
 }
