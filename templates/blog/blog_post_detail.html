@@ -22,9 +22,15 @@
 {% endblock %}
 
 {% block main %}
+
+<!-- I'm adding this div to to make blog posts not full screen, but a bit narrower -->
+<div class="blog_entrly">
 <h2>
     {{ blog_post.title }}
 </h2>
+
+<!-- remove part below-->
+
 {% block blog_post_detail_postedby %}
 {% editable blog_post.publish_date %}
 <h6 class="post-meta">
@@ -36,6 +42,9 @@
 </h6>
 {% endeditable %}
 {% endblock %}
+
+<!-- remove untill here-->
+
 <!-- {% block blog_post_detail_commentlink %}
 <p>
     {% if blog_post.allow_comments %}
@@ -81,6 +90,8 @@
 {% endspaceless %}
 {% endif %}
 {% endblock %}
+</div>
+
 
 <!-- {% block blog_post_detail_rating %}
 <div class="panel panel-default rating">
