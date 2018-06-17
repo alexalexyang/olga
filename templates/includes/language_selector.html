@@ -21,14 +21,9 @@
 </div> -->
 
 <script>
-
-var wow = new WOW();
-
     function myFunction() {
-        document.getElementById("language_selector_form").submit();
+        document.getElementById("#language_selector_form").submit();
     }
-
-wow.sync();
 </script>
 
 <form action="{% url "set_language" %}" method="post" id="language_selector_form">
