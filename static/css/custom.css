@@ -242,8 +242,18 @@ footer {
     border: 0px;
 }
 
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:active:hover {
+    background-color: #cccccc52;
+    border-color: #cccccc52;
+}
 
 
+.btn-info, .btn-info:focus, .btn-info:hover, .btn-info:active, .btn-info:active:hover {
+    background-color: #cccccc52;
+    border-color: #cccccc52;
+    background-image: none;
+    text-shadow: none;
+}
 
 .list-social i {
     margin-top: 20px;
