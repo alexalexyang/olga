@@ -8,6 +8,12 @@
     }
 }
 
+@media screen and (max-width: 275px) {
+    .logo {
+         max-height: 60%;
+    }
+}
+
 @font-face {
   font-family: "circe_bold";
   src: url("/static/fonts/CirceBold/Circe-Bold.woff") format("woff"),
