@@ -16,7 +16,7 @@
         {% include "catalogue/partials/add_to_wishlist.html" %}
     {% endiffeature %} -->
 {% else %}
-    {% if has_active_alert %}
+<!--    {% if has_active_alert %}
         <p>{% trans "You have an active stock alert for this product." %}</p>
     {% else %}
         <form id="alert_form" method="post" action="{% url 'customer:alert-create' pk=product.id %}" class="add-to-basket">
@@ -28,5 +28,5 @@
     {% endif %}
     {% iffeature "wishlists" %}
         {% include "catalogue/partials/add_to_wishlist.html" %}
-    {% endiffeature %}
+    {% endiffeature %} -->
 {% endif %}
