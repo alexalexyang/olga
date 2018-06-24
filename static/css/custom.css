@@ -233,22 +233,7 @@ a:hover, a:focus {
 
 /* Buttons section end */
 
-.list-social i {
-    margin-top: 20px;
-}
 
-.list-inline>li {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top: 20px;
-}
-
-.text-center {
-    text-align: center;
-    margin-top: 50px;
-    color: #656565;
-    font-size: 14px;
-}
 
 /* Shop form section start */
 
@@ -275,14 +260,24 @@ a:hover, a:focus {
     margin-right: auto;
     margin-bottom: 40px;
     position: relative;
+    max-width: 92.2%;
 }
 
 .frontpage_column {
-    float: left;
-    width: 50%;
-    padding-left: 35px;
-    padding-right: 35px;
-    min-width: 350px;
+  float: left;
+	max-width: 30%;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 350px;
+}
+
+.frontpage_line {
+  width: 50%;
+	height: 2px;
+  display: block;
+	margin-bottom: 50px;
+	margin-right: 25%;
 }
 
 .tours_row {
@@ -407,15 +402,6 @@ a:hover, a:focus {
 	min-width: 350px;
 }
 
-label {
-    display: inline-block;
-    max-width: 100%;
-    min-width: 70px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    margin-left: 50px;
-}
-
 .form-actions {
   margin-left: 200px;
 }
@@ -433,9 +419,34 @@ label {
 
 /* Footer */
 
+
+
 footer {
     background-color: #F7F7F7;
-    margin-top: 50px;
+    margin-top: 100px;
+}
+
+div.col-md-12.right {
+  width: 88%;
+  margin: auto;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+div.col-md-12.left {
+  width: 66%;
+  margin-left: 34.5%;
+  margin-right: 34.5%;
+}
+
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 70px;
+    margin-top: 20px;
+    font-weight: 500;
+    padding-bottom: 0px
 }
 
 .newsletter-and-social {
@@ -452,6 +463,19 @@ footer {
     height: 40px;
     line-height: 40px;
     border-radius: 100%;
+    margin-top: 20px;
+}
+
+.list-inline>li {
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 50px;
+    color: #656565;
+    font-size: 14px;
 }
 
 .form-control {
@@ -497,4 +521,3 @@ footer {
 }
 
 /* Footer end */
-
