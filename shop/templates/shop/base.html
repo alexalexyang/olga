@@ -190,8 +190,8 @@
 <footer>
 <div class="container">
 {% page_menu "pages/menus/footer.html" %}
-</div>
-    <div class="row">
+
+        <div class="row">
 <p class="site-info text-center">
     <!-- {% trans "Powered by" %}
     <a target="_blank" href="https://notathoughtexperiment.me">not a thought experiment
@@ -206,14 +206,15 @@
     <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
     {% endifinstalled %} -->
 
-        <br />
-        <br />
         Powered by <a target="_blank" href="https://notathoughtexperiment.me">not a thought experiment</a><br />
         All rights reserved to Provodnik 2018<br />
         <br />
         <br />
 </p>
 </div>
+</div>
+
+
 </footer>
 
 {% block footer_js %}
