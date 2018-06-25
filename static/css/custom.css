@@ -20,7 +20,7 @@ body {
 
 @media screen and (max-width: 275px) {
     .logo {
-         max-height: 60%;
+         max-height: 15px;
     }
 }
 
@@ -419,26 +419,44 @@ a:hover, a:focus {
 
 /* Footer */
 
-
-
 footer {
     background-color: #F7F7F7;
     margin-top: 100px;
 }
 
+
+.newsletter-and-social {
+    margin: auto;
+    width: 50%;
+}
+
 div.col-md-12.right {
-  width: 88%;
-  margin: auto;
-  margin-left: 6%;
-  margin-right: 6%;
+    margin: auto;
 }
 
 div.col-md-12.left {
-  width: 66%;
-  margin-left: 34.5%;
-  margin-right: 34.5%;
+    margin: auto;
+    padding: 0px;
 }
 
+@media screen and (max-width: 412px) {
+    div.col-md-12.left {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+}
+
+.list-inline.list-social.img-circle {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 412px) {
+    .list-inline.list-social.img-circle {
+        width: 100%;
+    }
+}
 
 label {
     display: inline-block;
@@ -447,12 +465,6 @@ label {
     margin-top: 20px;
     font-weight: 500;
     padding-bottom: 0px
-}
-
-.newsletter-and-social {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
 }
 
 .list-social i {
@@ -466,8 +478,16 @@ label {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 274px) {
+    .list-social i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+}
+
 .list-inline>li {
-    padding-right: 15px;
+    padding: 0px;
     margin-top: 20px;
 }
 
@@ -494,9 +514,14 @@ label {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+#mc_embed_signup {
+    margin: auto;
+    width: 80%;
+}
+
 #mc_embed_signup input.email{
     font-family: 'circe_light', montserratlight, sans-serif;
-	  font-size: 14px;
+	font-size: 14px;
     color: #4D4D4D;
 }
 
