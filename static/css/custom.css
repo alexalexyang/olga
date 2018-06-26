@@ -55,6 +55,12 @@ h1, h2 {
 
 }
 
+@media screen and (max-width: 375px) {
+  hi {
+    font-size: 3.1rem
+  }
+}
+
 h3, h4, h5, h6  {
   font-family: 'circe_extrabold', montserrat,sans-serif;
   margin-top: 0rem;
@@ -65,6 +71,12 @@ h3, h4, h5, h6  {
 h5 {
   font-size: 28px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 375px) {
+h5 {
+    font-size: 20px;
+  }
 }
 
 em{
@@ -218,9 +230,13 @@ a:hover, a:focus {
     border: 0px;
 }
 
-.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:active:hover {
+.btn-primary:focus, .btn-primary:active, .btn-primary:active:hover {
     background-color: #cccccc52;
     border-color: #cccccc52;
+}
+
+.btn-primary:hover {
+  background-color: #4D4D4D;
 }
 
 
@@ -272,12 +288,26 @@ a:hover, a:focus {
 	min-width: 350px;
 }
 
+@media screen and (max-width: 375px) {
+  frontpage_column {
+    max-width: 80%;
+  	padding: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-width: 100px;
+  }
+}
+
 .frontpage_line {
   width: 50%;
 	height: 2px;
   display: block;
 	margin-bottom: 50px;
 	margin-right: 25%;
+}
+
+.frontpage_text {
+  font-size: 18px;
 }
 
 .tours_row {
@@ -297,6 +327,18 @@ a:hover, a:focus {
     margin-right: auto;
     min-width: 350px;
 }
+
+@media screen and (max-width: 375px) {
+  .tours_column {
+      float: left;
+      width: 80%;
+      padding: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 50px;
+  }
+}
+
 
 .tours-entry .image-container {
     position: relative;
@@ -320,7 +362,18 @@ a:hover, a:focus {
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 35px;
-    min-width: 450px;
+  min-width: 450px;
+}
+
+@media screen and (max-width: 375px) {
+  .tour_description {
+    float: left;
+    width: 80%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 35px;
+    min-width: 50px;
+  }
 }
 
 .tour_description_half1 {
@@ -329,7 +382,7 @@ a:hover, a:focus {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  padding-right: 5px;
+  padding-right: 0px;
 }
 
 .tour_description_half2 {
@@ -349,19 +402,16 @@ a:hover, a:focus {
   min-width: 120px;
 }
 
-.about_image {
-  float: left;
-  width: 33.3%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-  padding-right: 5px;
+@media screen and (max-width: 375px) {
+  .tour_info {
+    float: left;
+    width: 80%;
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: 50px;
+  }
 }
 
-.about_image_all{
-  padding: 35px;
-  padding-right: 15px;
-}
 
 .blog_column {
   float: left;
@@ -370,6 +420,18 @@ a:hover, a:focus {
 	margin-left: auto;
 	margin-right: auto;
 	min-width: 350px;
+}
+
+
+@media screen and (max-width: 375px) {
+  .blog_column {
+    float: left;
+  	width: 80%;
+  	padding: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-width: 50px;
+  }
 }
 
 .walks_column {
@@ -381,12 +443,24 @@ a:hover, a:focus {
 	min-width: 350px;
 }
 
+@media screen and (max-width: 375px) {
+  .walks_column {
+    float: left;
+  	width: 80%;
+  	padding: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-width: 50px;
+  }
+}
+
 .walks_entry {
   position: relative;
   margin-top: 40px;
   margin-bottom: 40px;
   min-height: 100px;
 }
+
 
 .thumbnail {
     background-color: transparent;
@@ -402,13 +476,20 @@ a:hover, a:focus {
 	min-width: 350px;
 }
 
-.form-actions {
-  margin-left: 200px;
+@media screen and (max-width: 375px) {
+  .blog_entrly {
+  	padding-left: 0px;
+  	padding-right: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	min-width: 50px;
+  }
 }
 
-.contact_us{
-  margin-left: 50px;
+.form-actions {
+  margin-left: 174px;
 }
+
 
 #id_field_8 {
   border-width: 1px;
