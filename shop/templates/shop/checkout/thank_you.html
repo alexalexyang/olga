@@ -7,7 +7,7 @@
 {% block title %}
     {% blocktrans with number=order.number %}
         Order {{ number }}: confirmation
-    {% endblocktrans %} <!-- | {{ block.super }} -->
+    {% endblocktrans %}
 {% endblock title %}
 
 {% block checkout_nav %}
@@ -29,7 +29,7 @@
         {% trans "Please make a note of this reference or print this page and quote it in any communication with us regarding your order." %}</p>
     </p>
 
-    <div class="row shipping-payment">
+    <!-- <div class="row shipping-payment">
         <div class="col-sm-6">
             {% block shipping_info %}
                 <div class="sub-header">
@@ -107,7 +107,7 @@
 
             {% endblock %}
         </div>
-    </div>
+    </div> -->
 
     <div class="sub-header">
         <h2>{% trans "Order contents" %}</h2>
@@ -296,7 +296,7 @@
         </div>
     {% endblock basket_totals %}
 
-    {% block order_tracking %}
+    <!-- {% block order_tracking %}
         {% if not order.user %}
             <div class="sub-header">
                 <h2>{% trans "Tracking your order" %}</h2>
@@ -304,7 +304,7 @@
             <p>{% trans "You can track the status of your order" %}</p>
             <a class="btn btn-primary" href="{% url 'customer:anon-order' order_number=order.number hash=order.verification_hash %}">{% trans "View order status" %}</a>.
         {% endif %}
-    {% endblock %}
+    {% endblock %} -->
 
 
     {% block order_actions %}
@@ -314,7 +314,7 @@
                     <p><a onclick="window.print()" href="#" class="btn btn-primary btn-block btn-lg">{% trans "Print this page" %}</a></p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-4">
-                    <p><a href="{{ homepage_url }}" class="btn btn-primary btn-block btn-lg">{% trans "Continue shopping" %}</a></p>
+                    <p><a href="{% url 'home' %}" class="btn btn-primary btn-block btn-lg">{% trans "Continue shopping" %}</a></p>
                 </div>
             </div>
         </div>
